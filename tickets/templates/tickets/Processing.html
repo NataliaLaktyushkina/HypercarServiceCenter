@@ -1,0 +1,7 @@
+<div>Change oil queue: {{OilQueueLength}}</div>
+<div>Inflate tires queue: {{TiresQueueLength}}</div>
+<div>Get diagnostic queue: {{DiagnosticQueueLength}}</div>
+
+<form method="post">{% csrf_token %}
+  <button type="submit">Process next</button>
+</form>
